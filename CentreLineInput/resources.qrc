@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/cave_survey" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>

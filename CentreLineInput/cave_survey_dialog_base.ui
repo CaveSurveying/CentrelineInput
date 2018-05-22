@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CaveSurveyDialogBase</class>
+ <widget class="QDialog" name="CaveSurveyDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>721</width>
+    <height>585</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Centreline Input</string>
+  </property>
+  <widget class="QDialogButtonBox" name="button_box">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>540</y>
+     <width>281</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Discard|QDialogButtonBox::Save</set>
+   </property>
+   <property name="centerButtons">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>711</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="documentMode">
+    <bool>false</bool>
+   </property>
+   <widget class="QWidget" name="data_tab">
+    <attribute name="title">
+     <string>Data</string>
+    </attribute>
+    <widget class="QTableView" name="tableView">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>711</width>
+       <height>511</height>
+      </rect>
+     </property>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>People</string>
+    </attribute>
+   </widget>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Page</string>
+    </attribute>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>button_box</sender>
+   <signal>accepted()</signal>
+   <receiver>CaveSurveyDialogBase</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_box</sender>
+   <signal>rejected()</signal>
+   <receiver>CaveSurveyDialogBase</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
