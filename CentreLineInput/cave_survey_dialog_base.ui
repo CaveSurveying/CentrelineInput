@@ -84,11 +84,20 @@
      <property name="alternatingRowColors">
       <bool>true</bool>
      </property>
+     <property name="gridStyle">
+      <enum>Qt::SolidLine</enum>
+     </property>
+     <property name="cornerButtonEnabled">
+      <bool>true</bool>
+     </property>
      <property name="rowCount">
       <number>8</number>
      </property>
      <attribute name="horizontalHeaderCascadingSectionResizes">
       <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>67</number>
      </attribute>
      <attribute name="horizontalHeaderHighlightSections">
       <bool>true</bool>
@@ -133,12 +142,12 @@
      </column>
      <column>
       <property name="text">
-       <string>New Column</string>
+       <string>Compass</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>Compass</string>
+       <string>Clino</string>
       </property>
      </column>
      <column>
